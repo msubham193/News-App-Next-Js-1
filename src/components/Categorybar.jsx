@@ -35,6 +35,10 @@ const Categorybar = () => {
 
   const router = useRouter();
 
+  const categor = router.query;
+
+  console.log(categor.category);
+
   return (
     <div className="flex flex-col items-center mt-5 mx-20">
       <div className="flex gap-5 font-poppins">
@@ -42,10 +46,14 @@ const Categorybar = () => {
           <span
             key={item.id}
             onClick={() => router.push(`/category/${item.name}`)}
+            className= {categor.category===item.name?"cursor-pointer border-b-2 border-black p-1 transition-all duration-300":" cursor-pointer "}
           >
             {item.name}
           </span>
+        
         ))}
+
+        
       </div>
       <div className="bg-black h-[1px] w-full mt-5 mb-8"></div>
     </div>

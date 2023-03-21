@@ -1,4 +1,5 @@
 import { fetchEverything } from "@/utils/Requests";
+import Link from "next/link";
 import React from "react";
 import Search from "./Search";
 
@@ -7,7 +8,7 @@ const Header = () => {
     <div className="h-20  flex items-center justify-between px-10 font-poppins  ">
       <Search />
       <div className="font-extrabold text-2xl tracking-wider mr-20">
-        .News-app
+        <Link href="/">.News-app</Link>
       </div>
 
       <div className="bg-black text-white p-4 tracking-wider  rounded-3xl text-xs cursor-pointer">
@@ -16,6 +17,5 @@ const Header = () => {
     </div>
   );
 };
-
 
 export default Header;

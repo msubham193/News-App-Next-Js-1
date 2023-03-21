@@ -5,7 +5,7 @@ const API_KEY = process.env.API_KEY;
 export const fetchHeadlines = async (country = "in") => {
   try {
     const { data } = await axios.get(
-      `https://newsapi.org/v2/top-headlines?country=in&apiKey=314867c0416543f58ae17030f150c135`
+      `https://newsapi.org/v2/top-headlines?country=in&apiKey=491b303018674684b254966f0b246be9`
     );
 
     // console.log(data);
@@ -18,7 +18,7 @@ export const fetchHeadlines = async (country = "in") => {
 export const fetchCategory = async (category) => {
   try {
     const { data } = await axios.get(
-      `https://newsapi.org/v2/top-headlines/sources?category=${category}&apiKey=314867c0416543f58ae17030f150c135`
+      `https://newsapi.org/v2/top-headlines/sources?category=${category}&apiKey=491b303018674684b254966f0b246be9`
     );
 
     return(data);
@@ -30,7 +30,7 @@ export const fetchCategory = async (category) => {
 export const fetchEverything = async (query) => {
   try {
     const { data } = await axios.get(
-      `https://newsapi.org/v2/everything?q=${query}&apiKey=314867c0416543f58ae17030f150c135`
+      `https://newsapi.org/v2/everything?q=${query}&apiKey=491b303018674684b254966f0b246be9`
     );
 
     return data;

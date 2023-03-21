@@ -43,6 +43,7 @@ export async function getStaticPaths() {
     { params: { category: 'General' } },
     { params: { category: 'Health' } },
     { params: { category: 'Science' } },
+    { params: { category: 'Sports' } },
     { params: { category: 'Technology' } },
   ];
 

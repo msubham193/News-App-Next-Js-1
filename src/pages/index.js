@@ -24,8 +24,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header />
-        <Categorybar />
+     
         <BigPost item={props.results.articles} />
         <NewsSection/>
       </main>
