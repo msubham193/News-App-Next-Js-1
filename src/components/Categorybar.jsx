@@ -11,14 +11,7 @@ const Categorybar = () => {
       id: 2,
       name: "Entertainment",
     },
-    {
-      id: 3,
-      name: "General",
-    },
-    {
-      id: 4,
-      name: "Health",
-    },
+
     {
       id: 5,
       name: "Science",
@@ -40,16 +33,16 @@ const Categorybar = () => {
   console.log(categor.category);
 
   return (
-    <div className="flex flex-col items-center mt-5 mx-20">
-      <div className="flex gap-5 font-poppins">
+    <div className="flex flex-col  items-center mt-5 sm:mx-20 ">
+      <div className="flex md:gap-5 gap-1">
         {category.map((item, i) => (
-          <span
+          <h1
             key={item.id}
             onClick={() => router.push(`/category/${item.name}`)}
-            className= {categor.category===item.name?"cursor-pointer border-b-2 border-black p-1 transition-all duration-300":" cursor-pointer "}
+            className= {categor.category===item.name?"cursor-pointer border-b-2 border-black p-1 transition-all duration-300 text-xs sm:text-lg":" cursor-pointer text-xs sm:text-lg "}
           >
             {item.name}
-          </span>
+          </h1>
         
         ))}
 

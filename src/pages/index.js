@@ -25,7 +25,7 @@ export default function Home(props) {
       </Head>
       <main>
      
-        <BigPost item={props.results.articles} />
+      <BigPost item={props.results.articles} />
         <NewsSection/>
       </main>
     </>

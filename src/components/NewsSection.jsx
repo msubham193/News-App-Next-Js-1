@@ -11,7 +11,7 @@ const NewsSection = () => {
   return (
     <div className="mt-32 grid items-center justify-center">
 
-      <div className="grid grid-cols-4  gap-x-5 gap-y-5">
+      <div className="grid xl:grid-cols-4  sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5">
 
         {news.map((item) =>
           (<Post key={item.id} item={item} />)

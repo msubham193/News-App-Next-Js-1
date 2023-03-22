@@ -14,7 +14,7 @@ const Search = () => {
   };
 
   return (
-    <form className="max-w-sm px-4 w-60  " onSubmit={handleSearchSubmit}>
+    <form className="max-w-sm sm:px-4 w-32  sm:w-60  " onSubmit={handleSearchSubmit}>
       <div className="relative ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ const Search = () => {
         <input
           type="text"
           placeholder="Search"
-          className="w-32 py-2 pl-12 pr-4 text-black border border-black rounded-full  outline-none bg-[#FFFBF5] focus:w-full transition-all duration-300"
+          className="w-full sm:w-32 sm:py-2 py-1 pl-12 pr-4 text-black border border-black rounded-full  outline-none bg-[#FFFBF5] sm:focus:w-full transition-all duration-300"
           onChange={(e) => setQuery(e.target.value)}
         />
       </div>
