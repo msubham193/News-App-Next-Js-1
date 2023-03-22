@@ -7,7 +7,7 @@ const Post = ({ item }) => {
   const router = useRouter();
   var word=item.title.slice(0,5).toLowerCase();
   return (
-    <div onClick={() => router.push(`/post/${word}`)}  className="h-[400px] w-[300px] font-poppins shadow-md rounded-lg p-4 ">
+    <div onClick={() => router.push(`/post/${word}`)}  className="h-[400px] w-[300px] font-poppins shadow-md rounded-lg p-4 cursor-pointer ">
       <img
         src={
           !item.urlToImage

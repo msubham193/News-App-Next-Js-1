@@ -3,7 +3,7 @@ import { fetchHeadlines } from "@/utils/Requests";
 import { useRouter } from 'next/router'
 
 
-const single = (props) => {
+const Single = (props) => {
 
   const router = useRouter()
   const { id } = router.query
@@ -69,4 +69,4 @@ export async function getStaticPaths() {
   }
 
 }
-export default single
+export default Single

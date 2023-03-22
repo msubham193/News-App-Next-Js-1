@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import CategoryPost from '@/components/CategoryPost';
 
 
-const single = (props) => {
+const Single = (props) => {
   var news = props.results.sources;
   console.log(news);
   return (
@@ -52,4 +52,4 @@ export async function getStaticPaths() {
 }
 
 
-export default single
+export default Single
